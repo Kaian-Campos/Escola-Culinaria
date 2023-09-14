@@ -137,37 +137,7 @@ header{
         margin-top: 35px;
     }
 }
-
-@media (max-width:500px) {
-    h1 {
-        font-size:38px;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        width: 180px;
-    }
-    h2 {
-        font-size: 26px;
-    }
-    #aceito {
-        font-size: 15px;
-    }
-    #registro {
-        margin-bottom: 20px;
-    }
-    #login {
-        margin-bottom: 80px;
-    }
-    header{
-        height: 100px;
-    }
-    #maca {
-        margin-top: 33px;
-    }
-    #abacaxi {
-        margin-top: 10px;
-    }
-}
-@media (max-width:350px) { 
+@media (max-width:374px) { 
     
     h1 {
         font-size:32px;
