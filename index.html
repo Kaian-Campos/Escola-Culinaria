@@ -3,70 +3,74 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Escola</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- Aqui começa a putaria :) -->
-    <div id="header">
-    <h1>Escola de Culinária!</h1>
-    </div>
-    <div id="fruits">
-    <img id="maca" src="maca.png" alt="maçã">
-    <img id="abacaxi" src=abacaxi.png alt="abacaxi">
-    </div>
-    <div id="registro">
-        <h2>Crie já sua conta!</h2>
-        <form action="" method="get" target="_blank">
-            <input type="text" name="usuario" class="forms" placeholder="Usuário" minlength="3" required>
-            <br/>
-            <input type="text" name="senha" class="forms" placeholder="Senha" minlength="8" required>
-            <br/>
-            <input type="email" name="email" class="forms" placeholder="Email" required>
-            <br/>
-            <input type="text" name="cpf" class="forms" placeholder="Cpf" minlength="11" required>
-            <br/>
-            <input type="date" name="data" class="forms" placeholder="Data" required>
-            <br/>
-            <textarea name="descricao" class="forms"  placeholder="Conte suas experiências culinárias" minlength="1" required></textarea>
-            <br/>
-            <label class="team">
-                <input type="radio" class="team" name="escolha" value="maca">
-                Prefiro Maçã
-            </label>
-            <br/>
-            <label class="team">
-                <input type="radio" class="team" name="escolha" value="abacaxi">
-                Prefiro Abacaxi
-            </label>
-            <br/>
-            <label id="aceito">
-                <input type="checkbox" id="aceito" name="caixa" required/>
-                Quero ser mais saudável e mais feliz!
-            </label>
-            <br/>
-            <br/>
-            <input type="submit" class="botao" value="Cadastrar-se">
-        </form>
-    </div>
-    <div id="login">
-        <h2>Faça seu login!</h2>
-        <br/>  
-        <form action="" method="get" target="_blank">
-            <input type="text" name="usuario" class="forms" placeholder="Usuário" minlength="3" required>
-            <br/>
-            <input type="text" name="senha" class="forms" placeholder="Senha" minlength="8" required>
-            <br/>
-            <select name="ordem" class="forms">
-                <option value="abacaxi">Abacaxi</option>
-                <option value="maca" selected>Maçã</option>
-            </select>
-            <br/>
-            <br/>
-            <input type="submit" class="botao" value="Entrar">
-        </form>
-    </div>
-    <br/>
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1>Escola de Culinária!</h1>
+                <img id="maca" src="maca.png" alt="maçã">
+                <img id="abacaxi" src=abacaxi.png alt="abacaxi">
+            </div>
+        </div>
+    </header>
+    <section class="geral">
+        <div class="container">
+            <div id="registro">
+                <h2>Crie já sua conta!</h2>
+                <form action="" method="get" target="_blank">
+                    <input type="text" name="usuario" class="forms" placeholder="Usuário" minlength="3" required>
+                    <br/>
+                    <input type="text" name="senha" class="forms" placeholder="Senha" minlength="8" required>
+                    <br/>
+                    <input type="email" name="email" class="forms" placeholder="Email" required>
+                    <br/>
+                    <input type="text" name="cpf" class="forms" placeholder="Cpf" minlength="11" required>
+                    <br/>
+                    <input type="date" name="data" class="forms" placeholder="Data" required>
+                    <br/>
+                    <textarea name="descricao" class="forms"  placeholder="Conte suas experiências culinárias" minlength="1" required></textarea>
+                    <br/>
+                    <label class="team">
+                        <input type="radio" class="team" name="escolha" value="maca">
+                        Prefiro Maçã
+                    </label>
+                    <br/>
+                    <label class="team">
+                        <input type="radio" class="team" name="escolha" value="abacaxi">
+                        Prefiro Abacaxi
+                    </label>
+                    <br/>
+                    <label id="aceito">
+                        <input type="checkbox" id="aceito" name="caixa" required/>
+                        Quero ser mais saudável e mais feliz!
+                    </label>
+                    <br/>
+                    <br/>
+                    <input type="submit" class="botao" value="Cadastrar-se">
+                </form>
+            </div>
+            <div id="login">
+                <h2>Faça seu login!</h2>
+                <form action="" method="get" target="_blank">
+                    <input type="text" name="usuario" class="forms" placeholder="Usuário" minlength="3" required>
+                    <br/>
+                    <input type="text" name="senha" class="forms" placeholder="Senha" minlength="8" required>
+                    <br/>
+                    <select name="ordem" class="forms">
+                        <option value="abacaxi">Abacaxi</option>
+                        <option value="maca" selected>Maçã</option>
+                    </select>
+                    <br/>
+                    <br/>
+                    <input type="submit" class="botao" value="Entrar">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

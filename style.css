@@ -3,7 +3,17 @@
 }
 body {
     background-color: rgb(0, 24, 0);
-    margin-left:80px;
+    margin: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: space-between;
+}
+.geral {
+    display: flex;
+    justify-content: center;
 }
 h1{
     font-size:50px;
@@ -57,14 +67,12 @@ input:invalid, textarea:invalid {
     background-color: rgb(255, 179, 179);
 }
 #registro {
-    float: left;
-    width: 50%;
-    height: 650px;
+    display: flex;
+    flex-direction: column;
 }
 #login {
-    float: left;
-    width: 50%;
-    height: 650px;
+    flex-direction: column;
+    display: flex;
 
 }
 textarea {
@@ -97,17 +105,71 @@ input[type="date"]:invalid {
 #maca{
     width: 46px;
     height: 46px;
-    margin-bottom: 7px;
-    margin-left: 19px;
+    margin-top: 23px;
+    margin-left: 15px;
 }
-#header{  
-    float: left;
-    
+.title{  
+    display: flex;
 
 }
-#fruits{
-    float: left;
-    margin-right: 500px;
-    margin-bottom: 37px;
+header{
+    justify-content: center;
+    display: flex;
+    height: 120px;
+}
+@media (max-width:500px) {
+    .geral .container {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    h1 {
+        font-size:38px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    #aceito {
+        font-size: 15px;
+    }
+    #abacaxi{
+        width: 52px;
+        height: 52px;
+        margin-top: 10px;
+        
+    }
+    #maca{
+        width: 32px;
+        height: 32px;
+        margin-top: 25px;
+        margin-left: 8px;
+    }
+    #registro {
+        margin-bottom: 20px;
+    }
+    #login {
+        margin-bottom: 80px;
+    }
+    header{
+        height: 100px;
+    }
+}
+@media (max-width:300px) { 
     
+    h1 {
+        font-size:32px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #aceito, .team {
+        font-size: 15px;
+    }
+    header{
+        height: 80px;
+    }
 }
